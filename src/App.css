@@ -34,8 +34,8 @@
   gap: 5px;
 }
 .box{
-  width: 18vh;
-  height: 18vh;
+  width: clamp(12vh,18vh,12vh);
+  height: clamp(12vh,18vh,12vh);
 }
 .footer{
   display: flex;
@@ -79,16 +79,16 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
   flex-direction: column;
 }
 #windata {
   color: tomato;
   text-align: center;
-  width: 500px;
+  width: 50%;
   border: solid black;
   border-radius: 10px;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 #refresh {
   cursor: pointer;
@@ -100,5 +100,5 @@
   text-align: center;
   border-radius: 10px;
   height: 30px;
-  width: 100px;
+  width: 30%px;
 }
