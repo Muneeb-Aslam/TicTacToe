@@ -2,4 +2,103 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: whitesmoke;
+  font-family: 'Inter';
+  user-select: none;
+}
+#root{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  align-items: center;
+}
+.container h1{
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: tomato;
+}
+.board{
+  justify-self: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 17px 50px;
+  gap: 5px;
+}
+.box{
+  width: 18vh;
+  height: 18vh;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: tomato;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.players {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10px;
+}
+.score2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+#Afterwin.show {
+  display: flex;
+}
+#Afterwin {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5rem;
+  flex-direction: column;
+}
+#windata {
+  color: tomato;
+  text-align: center;
+  width: 500px;
+  border: solid black;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+#refresh {
+  cursor: pointer;
+  color: tomato;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: solid black;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  width: 100px;
 }
