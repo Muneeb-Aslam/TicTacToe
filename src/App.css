@@ -34,8 +34,8 @@
   gap: 5px;
 }
 .box{
-  width: clamp(12vh,18vh,12vh);
-  height: clamp(12vh,18vh,12vh);
+  width: 18vh;
+  height: 18vh;
 }
 .footer{
   display: flex;
